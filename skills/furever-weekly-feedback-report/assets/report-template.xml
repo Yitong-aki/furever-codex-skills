@@ -1,0 +1,77 @@
+<title>Furever 用户反馈周报｜{{PERIOD_TITLE}}</title>
+
+<callout emoji="📌" background-color="rgb(240,244,255)" border-color="rgb(130,167,252)">
+  <p><b>核心结论：</b>{{CORE_CONCLUSION}}</p>
+</callout>
+
+<h1>1. 数据来源与样本概览</h1>
+<p>统计周期：{{PERIOD_START}} 至 {{PERIOD_END}}（Asia/Shanghai）</p>
+<p>普通反馈纳入：Feedback Collection 中本周期用户主动发送的 Gmail、Typeform、App Store，以及周期可核验时的 Discord；AI 质量仅使用 Furever 后台数据库。</p>
+{{SOURCE_TABLE_XML}}
+
+<h1>2. 一句话结论</h1>
+<callout emoji="❗" background-color="rgb(254,255,240)" border-color="rgb(255,242,88)">
+  <p><b>一句话结论：</b>{{ONE_SENTENCE_CONCLUSION}}</p>
+</callout>
+<grid>
+  <column width-ratio="0.333333"><callout emoji="📊" background-color="rgb(240,244,255)" border-color="rgb(130,167,252)"><p><b>{{VALID_FEEDBACK_COUNT}}</b><br/>有效反馈<br/>{{VALID_FEEDBACK_WOW}}</p></callout></column>
+  <column width-ratio="0.333333"><callout emoji="⭐" background-color="rgb(240,251,239)" border-color="rgb(142,224,133)"><p><b>{{APP_STORE_MEAN}} / 5</b><br/>App Store 均分<br/>{{APP_STORE_WOW}}</p></callout></column>
+  <column width-ratio="0.333333"><callout emoji="💡" background-color="rgb(254,241,241)" border-color="rgb(249,142,139)"><p><b>{{KEY_METRIC_PERCENT}}</b><br/>{{KEY_METRIC_LABEL}}<br/>{{KEY_METRIC_WOW}}</p></callout></column>
+</grid>
+<p><b>综合判断：</b>{{SYNTHESIS}}</p>
+<hr/>
+
+<h1>3. Executive Summary</h1>
+<table>
+  <colgroup><col width="70"/><col width="70"/><col width="180"/><col width="240"/><col width="80"/><col width="180"/><col width="356"/></colgroup>
+  <thead><tr><th background-color="rgb(242,243,245)" vertical-align="top">优先级</th><th background-color="rgb(242,243,245)" vertical-align="top">严重度</th><th background-color="rgb(242,243,245)" vertical-align="top">具体问题 / 机会</th><th background-color="rgb(242,243,245)" vertical-align="top">去重数 / 占比</th><th background-color="rgb(242,243,245)" vertical-align="top">证据</th><th background-color="rgb(242,243,245)" vertical-align="top">影响</th><th background-color="rgb(242,243,245)" vertical-align="top">Team Comment</th></tr></thead>
+  <tbody>{{EXECUTIVE_ROWS_XML}}</tbody>
+</table>
+<hr/>
+
+<h1>4. 补充观察与趋势信号</h1>
+{{SUPPLEMENTARY_OBSERVATIONS_XML}}
+
+<h1>5. P1–P2 深度问题分析</h1>
+{{DEEP_ANALYSIS_XML}}
+
+<h1>6. AI 生成质量专项分析</h1>
+<p><b>数据边界：</b>{{AI_DATA_BOUNDARY}}</p>
+<h2>6.1 图片反馈｜按后台原始 Tag 统计</h2>
+<table>
+  <colgroup><col width="260"/><col width="190"/><col width="360"/></colgroup>
+  <thead><tr><th background-color="rgb(242,243,245)" vertical-align="top">后台原始 Tag</th><th background-color="rgb(242,243,245)" vertical-align="top">记录数 / 占比</th><th background-color="rgb(242,243,245)" vertical-align="top">Tag 含义</th></tr></thead>
+  <tbody>{{IMAGE_TAG_ROWS_XML}}</tbody>
+</table>
+<h2>6.2 视频反馈｜按后台原始 Tag 统计</h2>
+<table>
+  <colgroup><col width="260"/><col width="190"/><col width="360"/></colgroup>
+  <thead><tr><th background-color="rgb(242,243,245)" vertical-align="top">后台原始 Tag</th><th background-color="rgb(242,243,245)" vertical-align="top">记录数 / 占比</th><th background-color="rgb(242,243,245)" vertical-align="top">Tag 含义</th></tr></thead>
+  <tbody>{{VIDEO_TAG_ROWS_XML}}</tbody>
+</table>
+<h2>6.3 图片反馈代表案例</h2>
+<table>
+  <colgroup><col width="105"/><col width="125"/><col width="135"/><col width="95"/><col width="135"/><col width="250"/><col width="150"/><col width="150"/><col width="125"/><col width="125"/></colgroup>
+  <thead><tr><th background-color="rgb(242,243,245)" vertical-align="top">User ID</th><th background-color="rgb(242,243,245)" vertical-align="top">Snap/Generation ID</th><th background-color="rgb(242,243,245)" vertical-align="top">图片或视频 link</th><th background-color="rgb(242,243,245)" vertical-align="top">Snap Type</th><th background-color="rgb(242,243,245)" vertical-align="top">后台原始 Tag</th><th background-color="rgb(242,243,245)" vertical-align="top">用户原文</th><th background-color="rgb(242,243,245)" vertical-align="top">用户输入原图</th><th background-color="rgb(242,243,245)" vertical-align="top">AI 生成图片</th><th background-color="rgb(242,243,245)" vertical-align="top">AI 生成视频</th><th background-color="rgb(242,243,245)" vertical-align="top">是否有 character sheet</th></tr></thead>
+  <tbody>{{IMAGE_DETAIL_ROWS_XML}}</tbody>
+</table>
+<h2>6.4 视频反馈代表案例</h2>
+<table>
+  <colgroup><col width="105"/><col width="125"/><col width="135"/><col width="95"/><col width="135"/><col width="250"/><col width="150"/><col width="150"/><col width="125"/><col width="125"/></colgroup>
+  <thead><tr><th background-color="rgb(242,243,245)" vertical-align="top">User ID</th><th background-color="rgb(242,243,245)" vertical-align="top">Snap/Generation ID</th><th background-color="rgb(242,243,245)" vertical-align="top">图片或视频 link</th><th background-color="rgb(242,243,245)" vertical-align="top">Snap Type</th><th background-color="rgb(242,243,245)" vertical-align="top">后台原始 Tag</th><th background-color="rgb(242,243,245)" vertical-align="top">用户原文</th><th background-color="rgb(242,243,245)" vertical-align="top">用户输入原图</th><th background-color="rgb(242,243,245)" vertical-align="top">AI 生成图片</th><th background-color="rgb(242,243,245)" vertical-align="top">AI 生成视频</th><th background-color="rgb(242,243,245)" vertical-align="top">是否有 character sheet</th></tr></thead>
+  <tbody>{{VIDEO_DETAIL_ROWS_XML}}</tbody>
+</table>
+<p><em>{{AI_VERIFICATION_NOTE}}</em></p>
+<hr/>
+
+<h1>7. 功能诉求与机会点</h1>
+{{OPPORTUNITIES_XML}}
+
+<h1>8. 各渠道专项分析</h1>
+<h2>8.1 Gmail｜主要反馈主题与代表原文</h2>
+{{GMAIL_XML}}
+<h2>8.2 Typeform｜结构化体验信号</h2>
+{{TYPEFORM_XML}}
+<h2>8.3 App Store｜公开口碑与低星原因</h2>
+{{APP_STORE_XML}}
+{{DISCORD_SECTION_XML}}

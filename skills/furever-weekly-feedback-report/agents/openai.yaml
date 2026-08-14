@@ -1,0 +1,4 @@
+interface:
+  display_name: "Furever 用户反馈周报"
+  short_description: "生成可审核、证据可追溯的 Furever 每周用户反馈报告"
+  default_prompt: "使用 $furever-weekly-feedback-report 生成上一自然周的用户反馈周报，先给出方案，获得确认后再新建飞书文档。"
